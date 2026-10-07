@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="author" content="Vijay Kainth">
+        <meta name="description" content="Stay SMART. Stay Secure Report page">
+        <title>Stay Smart Report</title>
+        
+        
+        <link rel="stylesheet" href="Cyber security Stay SMART style.css">
+        <!--<link rel="JavaScript" href="Report.js">-->
+        <meta charset="utf-8" />
+        
+
+
+    </head>
+    
+<body>
+<div class="web-border"></div>
+<div id="Report-view">
+            <div id="header">
+                <div id="logo-headtag">
+                    
+                    <h1> Stay <span class="S">S</span><span class="M">M</span><span class="A">A</span><span class="R">R</span><span class="T">T</span>. stay secure. </h1>
+                    <h2> Think <span class="S">S</span><span class="M">M</span><span class="A">A</span><span class="R">R</span><span class="T">T</span> when your attacked.</h2>
+                </div> 
+                    <img class="header-report-image" src="/Report images/report-page-header-image.svg">  
+            </div>
+
+            <nav>
+                <ul>
+                    <li class="home-high"><a href="Stay SMART Homepage.html">Homepage</a></li>
+                    <li class="do-high"><a href="Stay SMART Do's .html">Do's</a></li>
+                    <li class="dont-high"><a href="Stay SMART Don'ts.html">Don'ts</a></li>
+                    <li class="internet-high"><a href="Stay-SMART-internet.html">Internet explained</a></li>
+                    <li class="report-high"><a href="Stay-SMART-report.html"><b>Report</b></a></li>
+                    <li class="high"><a onclick="handleEmailDisplay()">Subscribe</a></li>
+                    <li id="nav-search"><input id="Search-box" type="text"placeholder="Search..."> <button>Search</button></li>
+                </ul>
+            </nav>
+        
+    <div id="email-display">
+        <div class="email-container">
+            <form id="email-form">
+                <h4>To subscribe to stay SMART, please enter your email below:</h4>
+                <h4>Email:<input id="report-email" required type="email" placeholder="Enter email address" field="subscirbe to stay SMART" ><button type="submit">Submit email</button></h4>   
+            </form>
+            <div id="email-thanks">
+                <h2>Thanks for subscribing to: <br></h2>
+                <h2 class="email-thanks-message">Stay <span class="S">S</span><span class="M">M</span><span class="A">A</span><span class="R">R</span><span class="T">T</span></h2>
+            </div>
+            <img class="report-email-image" src="/Report images/email-report-phone.svg">
+        </div>
+    </div>
+        
+
+    <div class="main-content">
+        <h2><u>Think SMART before you tap, type or click.</u></h2>
+        <h3>Tell us what happened.</h3>
+        <p class="shared-font-style">If you have been a victim of a cyber-crime or are affected by cyber-criminals please report it to us and we will help you.</p>
+
+        <p class="shared-font-style">Please make a report if you need help.</p>
+        <h2>Report process</h2>
+        <p class="shared-font-style">To make a report you must follow 3 steps:</p>
+    </div class="main-content">
+
+        <div class="report-process">
+            <div >
+                <h3>Step-1</h3>
+                <p class="shared-font-style">Fill out the form and the required fields correctly.</p>
+                <img style="width:34%;" src="/Report images/report-step-1-image.svg">  
+            </div>
+            <div>
+                <h3>Step-2</h3>
+                <p class="shared-font-style" id="space-under-report-process">Review the information in the report before submitting.<br>
+                If there are any mistakes return to step-1 to correct them.</p>
+                <img class="report-image" src="/Report images/report-step-2-image.svg">  
+            </div>
+            <div>
+                <h3>Step-3</h3>
+                <p class="shared-font-style">The report will be sent to us and we will support you.</p>
+                <img class="report-image" src="/Report images/report-step-3-image.svg">  
+            </div>
+        </div>
+    <div class="main-content-2">
+        <h3>Required information</h3>
+        <p class="shared-font-style">You must give a name and an email address to make a report.</p>
+        <p class="shared-font-style">Click on the form to begin your report.</p>
+        <div>
+            <a class="start-report-form" onclick="handleStartReportFunction()">
+                <img style="width:12%;" src="/Report images/1306029-clipboard-908886_1920.png">
+            </a>
+        </div>
+    </div class="main-content-2">
+
+</div>
+</div class="report-view">
+
+            <div id="Edit-view" onsubmit="handleEditView(event)">
+
+            <div class="report-process" id="space-under-report-process">
+                <div>
+                    <h3>Step-1</h3>
+                    <p class="shared-font-style">Fill out the form and the required fields correctly.</p>
+                    <img style="width:34%;" src="/Report images/report-step-1-image.svg">  
+                </div>
+                <div class="highlight-section">
+                    <h3>Step-2</h3>
+                    <p class="shared-font-style" id="space-under-report-process">Review the information in the report before submitting.<br>
+                    If there are any mistakes return to step-1 to correct them.</p>
+                    <img class="report-image" src="/Report images/report-step-2-image.svg">  
+                </div>
+                <div class="highlight-section">
+                    <h3>Step-3</h3>
+                    <p class="shared-font-style">The report will be sent to us and we will support you.</p>
+                    <img class="report-image" src="/Report images/report-step-3-image.svg">  
+                </div>
+            </div>
+
+                <div class="report-form-margin">
+                    <div id="report-form-container">
+
+                    <u><h1 class="report-header">Report-form</h1></u>
+
+                    <p class="shared-font-style">Please select what threat you are dealing with (Required):<br>
+                    If you are not sure what each threat is visit the Do's or Don'ts page by clicking on each link below and come back: </p>
+                    <div class="link-verticle">
+                        <ul ><a href="Stay SMART Do's .html">Do's page</a></ul>
+                        <ul ><a href="Stay SMART Don'ts.html">Don'ts page</a></ul>
+                    </div>
+                   
+
+                        <div class="button-container">
+                            <div id="buttons-rows">
+                                <button id="r" class="button"><b>Adware</b></button>
+                                <button id="i" class="button"><b>Spyware</b></button>
+                                <button id="b" class="button"><b>Phishing</b></button>
+                            </div>
+                            <div id="buttons-rows">
+                                <button id="a" class="button"><b>Ransomware</b></button>
+                                <button id="n" class="button"><b>Trojan</b></button>
+                                <button id="o" class="button"><b><span>R.A.T <span style="font-size: 22px;">(Remote access trojan)</span></span></b></button>
+                            </div>
+                            </div>
+                            <div id="buttons-rows">
+                                <button id="w" class="button"><b>Key-logger</b></button>
+                            </div>
+                        </div>
+
+                    <p class="shared-font-style">If your affected by a threat not listed please tell us what it is below:</p>
+                        <label>Other threat:</label>
+                        <input class="edit-info" id="user-threat" type="text" placeholder="tell us what type of problem you have"/>
+                        <button class="add-threat-button" onclick="handleListFunction()">
+                            Add threat
+                        </button>
+                        <!--The submit button was here first, below the input field but it appeared side by side in the browser-->
+                        <div class="threats-list">
+                                <ul id="threats" ></ul>
+                                <!--threat example: Worm-->
+                        </div>
+
+                    <form onclick="return detailsVerifications()">
+                        <hr style="border:solid red;">
+                        <span>Name (Begin with a capital letter):</span>
+                        <input type="text" placeholder="Required" class="edit-info" id="input-name" required>
+                        <hr style="border:dashed orange;">
+                        <span>Other names (This can be either a surname or an online profile name):</span>
+                        <input type="text" placeholder="Optional" class="edit-info" id="input-surname" >
+                        <hr style="border:dotted yellow;">
+                        <span>Date of incident (Optional):</span>
+                        <input dir="ltr"; type="date" class="edit-info" id='input-date' >
+                        <hr style="border: solid green;">
+                        <span>Incident description:(extend text box as necessary)</span>
+                        <textarea id="input-incident" maxlength="1000" placeholder="Required" required></textarea>
+                        <p id="incident-counter">0 / 1000 characters</p>
+
+                        <hr style="border: dotted blue;">
+                        <span>Email address (Please enter a valid UK email address):</span>
+                        <input type="email" placeholder="Required" class="edit-info" id="input-email" required>
+                        <hr style="border:dashed indigo;">
+                        <span>Phone number (Please enter a verified number):</span>
+                        <input placeholder="Optional" class="edit-info" id="input-phonenumber"/>
+
+                        <hr style="border: dotted violet;">
+
+                        <p>Are you contancting us for advice or assistance:</p>
+                        <label>
+                            <input value="Advice" type="radio" name="advice or assistance">Advice
+                        </label>
+                        <label>
+                            <input value="Assistance" type="radio" name="advice or assistance">Assistance
+                        </label>
+                        <h1 id="enter-threats">Please tell us the threat(s) you are dealing with.</h1>
+                        <h1 id="enter-capital">Please enter your name beginning with a capital letter.</h1>
+                        <h1 id="enter-date">Please enter a valid date, not one in the future.</h1>
+                        <h1 id="enter-email">Please enter a valid email.</h1>
+                        <h1 id="enter-phone">Please enter a valid phone number that begins with 44, 01, 02.</h1>
+                        <h1 id="enter-advice-assistance">Please select what you are contacting us for.</h1>
+                        <span><h4>Continue report</h4></span>
+                        <button class="next-button" type="submit" type="click" onclick="return threatsVerification()">Next</button>
+                    </form>   
+                    
+                    </div>
+
+                    
+                    
+                </div>
+            </div>
+        </div>
+    
+
+        <div id="Confirm-view">
+
+            <div class="report-process" id="space-under-report-process">
+                <div class="highlight-section">
+                    <h3>Step-1</h3>
+                    <p class="shared-font-style">Fill out the form and the required fields correctly.</p>
+                    <img style="width:34%;" src="/Report images/report-step-1-image.svg">  
+                </div>
+                <div>
+                    <h3>Step-2</h3>
+                    <p class="shared-font-style" id="space-under-report-process">Review the information in the report before submitting.<br>
+                    If there are any mistakes return to step-1 to correct them.</p>
+                    <img class="report-image" src="/Report images/report-step-2-image.svg">  
+                </div>
+                <div class="highlight-section">
+                    <h3>Step-3</h3>
+                    <p class="shared-font-style">The report will be sent to us and we will support you.</p>
+                    <img class="report-image" src="/Report images/report-step-3-image.svg">  
+                </div>
+            </div>
+            <div class="report-form-margin">
+                <u><h1 class="report-header">Confirm-report</h1></u>
+                <h4>Is the information you have provided correct?</h4>
+
+                <span id="threats-list-header">Threat(s) you are dealing with:</span>
+                    <div class="threats-list">
+                        <ul id="confirm-threats"></ul>
+                        <!--threat example: Worm-->
+                    </div>
+                    
+                <div>
+                    <hr style="border:solid red;">
+                    <span>Name:</span><p class="confirm-text" id="name"></p>
+                </div>
+                <div>
+                    <hr style="border:dashed orange;">
+                    <span>Other name:</span><p class="confirm-text" id="surname"></p>
+                </div>
+                <div>
+                    <hr style="border:dotted yellow;">
+                    <span>Date of incident:</span><p class="confirm-text" id="date">N/A</p>
+                </div>
+                <div>
+                    <hr style="border: solid green;">
+                    <span>Incident description:</span><p class="confirm-text" id="incident">N/A</p>
+                </div>   
+                <div>
+                    <hr style="border: dotted blue;">
+                    <span>Email validation:</span><p class="confirm-text" id="email"></p>
+                </div>
+                <div>
+                    <hr style="border:dashed indigo;">
+                    <span>Phone number (optional):</span><p class="confirm-text" id="phonenumber">N/A</p>
+                </div>
+                <div>
+                    <hr style="border: dotted violet;">
+                <p>Are you contancting us for advice or assistance:</p>
+                    <label>
+                        <input id="confirm-advice" type="radio" disabled >Advice
+                    </label>
+                    <label>
+                        <input id="confirm-assistance" type="radio" disabled >Assistance
+                    </label>
+                <div style="margin-top:10px;">
+                    <button style="color:white; background-color: red;" id="back-button" onclick="handleConfirmView()">Back</button>
+                    <button style="color:white; background-color: green;" id="submit-button"onclick="handleSentView()">Submit</button>
+                </div>
+                </div>
+
+            </div>
+        </div>
+
+        </div class="report-form-margin">
+            <div id="Sent-view" >
+            <div class="report-process" id="space-under-report-process">
+                <div class="highlight-section">
+                    <h3>Step-1</h3>
+                    <p class="shared-font-style">Fill out the form and the required fields correctly.</p>
+                    <img style="width:34%;" src="/Report images/report-step-1-image.svg">  
+                </div>
+                <div class="highlight-section">
+                    <h3>Step-2</h3>
+                    <p class="shared-font-style" id="space-under-report-process">Check the information in the report before submitting.<br>
+                    If there are any mistakes return to step-1 to correct them.</p>
+                    <img class="report-image" src="/Report images/report-step-2-image.svg">  
+                </div>
+                <div>
+                    <h3>Step-3</h3>
+                    <p class="shared-font-style">The report will be sent to us and we will support you.</p>
+                    <img class="report-image" src="/Report images/report-step-3-image.svg">  
+                </div>
+            </div>
+                <div id="report-sent">
+                    <div class="send-report-image-container">
+                        <img id="space-under-report-process" class="report-image" src="/Report images/thank-image.jpg">
+                        <img id="space-under-report-process" class="report-image" src="/Report images/you-image.jpg">  
+                    </div>
+                    <div class="thank-you-style">
+                        <div style="display:flex; align-items:flex-end;" class="shared-font-style">
+                            <h2 >Thank you&nbsp;</h2><h2 id="thank-name">Name</h2>
+                            <div id="last-name-container">
+                                <h2 id="thank-surname">Other-name</h2>
+                            </div>
+                            <h2>&nbsp;for making this report</h2>
+                        </div>
+                        <div>
+                            <p class="shared-font-style">You will be contacted by us and offered support with the threat you are dealing with</p>
+                        </div>
+                    </div>
+
+                    <form id="thanks-email-container" >
+                        <text>Please subscribe to us with your email:</text>
+                            <input id="thank-email" placeholder="type email here" type="email" style="width: 40%; color:yellow;" required>
+                        <button style="cursor:pointer; color: orange" type="submit"><i><b>Submit email</b></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<footer class="shared-font-style">
+    Special thanks to: Pexels, Unsplash, Pixabay TWN
+</footer>
+
+
+</body>
+ <script src="report-function.js"></script>
+ <script src="verifications.js"></script>
+</html>
+
+<style>
+
+
+
+.header-report-image{
+    width:9%;
+    border-top-right-radius: 30%;
+    border-bottom-right-radius: 20%;
+}
+
+.email-container{
+    background-color: darkslateblue;
+}
+
+.report-email-image{
+    width:6%;
+}
+
+.main-content,.main-content-2{
+    margin: 0 8% auto;
+    padding:2%;
+    background-color: blanchedalmond;
+}
+
+.main-content {
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 30%;
+}
+
+.main-content-2{
+    border-top-left-radius: 12px;
+    border-top-right-radius: 30%;
+}
+
+.report-font{
+    font-family:monospace ;
+}
+
+
+.report-process{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    div{
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        width:33%;
+        h3{
+            padding: 0;
+            margin:0;
+        }
+
+    }
+}
+#space-under-report-process{
+    margin-bottom: 4%;
+}
+
+.start-report-form{
+    background-color: transparent;
+    width:fit-content;
+    cursor:pointer;
+}
+
+.start-report-form:active img{
+    transform: scale(0.97);
+}
+
+.link-verticle{
+    display:flex;
+    justify-content: center;
+    gap:6%;
+    ul{
+        padding:2px;
+        font-size: xx-large;
+    }
+}
+
+.highlight-section {
+  /* Floods the topmost layer of the entire div with your grey-dark overlay */
+  box-shadow: inset 0 0 0 9999px rgba(30, 30, 30, 0.4);
+  filter: grayscale(100%) brightness(65%);
+}
+
+
+.report-image{
+    width:40%;
+}
+.report-form-margin{
+    margin:0 20% auto;
+    padding:10px;
+    background-color:#E8E8EA;
+    border-color: #C7BA9C;
+    border-radius: 16px;
+    border-style:double; 
+    border-width: 40px;
+        .report-header{
+        max-width: fit-content;
+        background-color: grey;
+        display:flex;
+        justify-content:center;
+        font-family:monospace;
+        font-size: 40px;
+        margin: 0 auto;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        padding:10px;
+    }
+}
+
+#enter-threats,#enter-capital,#enter-date,#enter-email,#enter-phone,#enter-advice-assistance{
+    color:red;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 300 ;
+    font-size: large;
+    display:none;
+    background: none;
+    align-self:auto;
+
+}
+
+#buttons-rows{
+    display:flex;
+    justify-content:center
+}
+
+.button-container{
+
+    padding:0;
+    margin:0;
+}
+
+.button{
+
+    text-align: center;
+    font-size:xx-large;
+    cursor:pointer;
+    
+    border-radius: 12px;
+    min-width:31%;
+    height:70px;
+    margin:10px;
+    padding:0;
+    
+    .onclick{
+        color:white;
+}
+}
+
+.add-threat-button{
+    padding:2;
+    margin:5px 0px 0px 0px;
+    border-radius: 16px;
+    background-color: navy;
+    cursor:pointer;
+    font-size: large;
+    color:azure;
+}
+
+/* button threat */
+
+
+
+/* close list style */
+
+
+#threats li{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    width:fit-content;
+    font-size: medium;
+    font-family:'Times New Roman', Times, serif;
+}
+
+#threats,#confirm-threats {
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap
+}
+
+
+.close-btn {
+    color: #ff0000;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.close-btn:hover {
+    color: #b30000; /* Darkens the red button slightly when hovered */
+}
+
+
+.space{
+    padding:50px;
+}
+
+#Edit-view,#Confirm-view,#Sent-view{
+    display:None;
+}
+
+#report-sent{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin:2% 12% auto;
+    background-color: cornflowerblue;
+    color:white;
+    padding-bottom:2%;
+    border-radius: 16px;
+}
+
+
+hr{  
+    margin:10px;
+}
+
+
+.report-form-container{
+    max-width:400px;
+    padding:10px;
+    margin:auto;
+
+}
+.edit-info,textarea{
+    width:98%;
+    min-height: 30px;
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+#input-date{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+    direction: ltr;
+}
+
+textarea{
+    min-height: 80px;
+}
+
+.next-button{
+    border-radius: 15px;
+    background-color:mediumturquoise;
+    min-width: 10%;
+    min-height: 30px;
+    cursor:pointer;
+}
+
+.confirm-text{
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#confirm-threats li{
+    white-space: pre-line !important; 
+    display: block !important;
+}
+
+
+#back-button{
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    height:50px;
+    width:8%
+}
+
+#submit-button{
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    height:50px;
+    width:8%
+}
+
+.send-report-image-container{
+    background-color: white;
+    display:flex;
+    justify-content: center;
+}
+
+.thank-you-style{
+    padding:10px;
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#thanks-email-container {
+    font-size: large;
+    width:49%;
+    display: flex;
+    align-items: flex-start;
+    border-radius: 16px;
+    border: none;
+    box-shadow: inset 0 0 0 2px white;
+    margin:0;
+    padding:8px;
+    input,button{
+        font-size: large;
+        font-family:Arial, Helvetica, sans-serif;
+        background-color: transparent; 
+        color: white; 
+        border:none !important; 
+        outline:none !important; 
+        background:none;
+    }
+}
+
+#thanks-email-container:has(button:active){
+        transform: translate(1px,1px) scale(0.96);
+        box-shadow: inset 0 12px 32px darkblue;
+    }
+
+
+</style>
+
