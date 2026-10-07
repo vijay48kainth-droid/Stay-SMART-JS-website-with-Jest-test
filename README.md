@@ -2,6 +2,7 @@
 This is the Stay Smart website with the Jest test added to it to practice with.
 
 To make the test work the application needs the dependencies installed again, they are not attached to the file.
+The test was done with jsdom environment to test that the functionalities only accept the verified values.
 
 The test results are:
 
